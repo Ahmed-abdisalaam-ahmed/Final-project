@@ -580,7 +580,11 @@ footer{
         margin-bottom: 1rem;
     }
     .filters ul li{
-        padding: 5px;
+        padding: 3px;
+        font-size: 0.8rem;
+    }
+    .filters ul li a{
+        font-size: 0.8rem;
     }
     .filters ul li a:hover{
         color: #ed563b ;
