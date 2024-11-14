@@ -522,17 +522,18 @@ footer{
    }
    .desktop-menu h1{
     color: black;
-    font-weight:800
+    font-weight:800;
    }
    .menu-kink{
     display: none;
    }
    .mobile-menu {
-    display: none;
+    display: block;
     position: fixed;
-    /* transform: translateX(0px); */
-    transition: 350ms ease-in-out;
-    inset: 4.36785555999rem 3rem 10rem 3rem;
+    right: 10%;
+    /* transform: translateY(0%); */
+    transition: display 350ms ease-in-out;
+    /* inset: 4.36785555999rem 3rem 10rem 3rem; */
     width: 80%;
     background-color: #fff;
    }
@@ -551,15 +552,13 @@ footer{
    .mobile-menu .navation .menu-info li {
     border-top: 1px solid black;
    }
-    .mobile-menu  [data-visible="true"] {
-        display:none;
-    }
+    
 
-    .hamburger i[data-visible="true"]{
+    .hamburger i[data-visible="true"], .mobile-menu[data-visible="true"]{
         display: block;
     }
 
-    .hamburger i[data-visible="false"]{
+    .hamburger i[data-visible="false"], .mobile-menu[data-visible="false"]{
         display: none;
     }
    .mobile-menu li{
@@ -642,4 +641,9 @@ footer{
         height: 250px;
     }
 
+}
+@media(min-width:768px ) and  (max-width: 900px){
+    .comment {
+        grid-template-columns: 1fr 1fr ;
+    }
 }
